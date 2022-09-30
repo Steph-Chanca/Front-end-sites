@@ -1,0 +1,200 @@
+body { /* -- corpo do site -- */
+    margin: 0;
+    padding: 20px;
+    background-color: #EFE6F4;
+}
+
+.nome-titulo a { /* -- edição do nome 'Stephany'e link -- */
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 60px;
+    color: #637FF5;
+    transition: .3s;
+}
+
+.nome-titulo a:hover{ /* -- efeito de transição do link do nome -- */
+    color: #F26DF0;
+    transition: all .2s;
+}
+
+.cargos { /* -- edição dos cargos -- */
+    margin-left: 30px;
+    color: #637FF5;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 200px;
+    height: auto;
+    display: inline;
+    margin: 3%;
+}
+
+.button {
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    padding: 12px 12px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #A072E6;
+    border: 2px solid #A072E6;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button::before{ /* --  pseudo elemento para animação do menu -- */
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #A072E6;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.button:hover::before{ /* -- continuação da estilização da animação do menu -- */
+    width: 100%;
+}
+
+.button:hover{ /* --  efeito de transição do menu -- */
+    background-color: #A072E6;
+    color:white;
+    transition: all .3s;
+}
+
+.b3 { /* -- cor do botao correspondente a página atual -- */
+    background-color: #A072E6;
+    color: white;
+}
+
+.titulo-resumo { /* -- edição e posicionamentos da frase na página -- */
+    margin-left: 30px;
+    margin-top: 80px;
+    font-size: 15px;
+    color: #f03bed;
+}
+
+.contato_email { /* -- edição e posicionamentos do e-mail -- */
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #637FF5;
+}
+
+.meu_form { /* -- padronização dos itens gerais do formulário -- */
+    margin: 30px;
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+}
+
+input[name=nome], /* -- estilização dos itens nome e email do formulário -- */
+input[name=email],
+text, email{
+    display: inline;
+    max-width: 400px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #637FF5;
+    outline: none;
+}
+
+input[name=mensagem], /* -- estilização do item mensagem do formulário -- */
+textarea{
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    max-width: 450px;
+    max-height: 70px;
+    padding-left: 10px;
+    line-height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #637FF5;
+}
+
+input[name=enviar],
+submit{ /* -- estilização do botão enviar do formulário -- */
+    width: 80px;
+    margin-left: 2px;
+    margin-top: 100px;
+    color: #A072E6;
+    cursor: pointer;
+    border-color: #637FF5;
+    border-radius: 15px;
+}
+
+input[name=enviar]:hover::before{ /* -- estilização da animação do botão enviar -- */
+    width: 100%;
+}
+
+input[name=enviar]:hover{ /* --  efeito de transição do botão enviar -- */
+    background-color: #A072E6;
+    color:white;
+    transition: all .3s;
+}
+
+.meu_form label { /* -- estilização dos títulos de cada item do formulário -- */
+    display: inline-block;
+    margin-top: 20px;
+    color: #A072E6;
+}
+
+.meu_form labelmsg  { /* -- estilização dos títulos de cada item do formulário -- */
+    display: inline-block;
+    margin-top: 20px;
+    color: #A072E6;
+}
+
+.social-icon { /* -- edição dos ícones de redes sociais (posição) -- */
+    z-index: 1;
+    position: absolute;
+    margin-top: -430px;
+    margin-left: 1050px;
+}
+
+.social-icon img { /* -- edição dos ícones de redes sociais (tamanho) -- */
+    max-width: 40px;
+    max-height: 40px;
+    transition: .5s;
+}
+
+.social-icon li { /* -- edição dos ícones de redes sociais (lista) -- */
+    list-style: none;
+    margin: 30px;
+}
+
+.social-icon img:hover { /* -- animação dos icones das redes sociais -- */
+    transform: translateY(-15px);
+}
+
+.img-perfil { /* -- edição da foto pessoal (posição) -- */
+    z-index: 1;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -85px;
+}
+
+.img-perfil img { /* -- edição da foto pessoal (tamanho e forma) -- */
+    width: 250px;
+    height: 265px;
+    border-radius: 100%;
+    border: 15px solid #EFE6F4;
+}
+
+.forma {
+    position: relative;
+    margin-left: 1020px;
+    margin-top: -745px;
+    width: 240px;
+    height: 600px;
+    background-color: #A072E6;
+}
